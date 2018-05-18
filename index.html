@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+            crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- data json -->
+<script src="json/data.json"></script>
+<link rel="stylesheet" href="css/mycss.css"/>
+</head>
+<body>
+<div class="container-fluid">
+<header>
+ <h1>Media Thek</h1>
+</header>
+
+<nav class="navbar navbar-default noborder">
+    <div class="container-fluid ">
+    <ul class="nav navbar-nav">
+               <li><span id="addMedia">Add Media</span></li>
+               <li id="eraseMedia">Erase Media</li>
+               <li id="showMedia">Show Media</li>
+               <li id="showByCategory">Show By Category</li>
+            </ul>
+    </div>
+</nav>
+<main>
+ <div id="generalOutput" class="row"></div>
+</main>	
+<script src="js/outputMask.js"></script>
+<script src="js/main.js"></script>
+</div>
+</body>	
+</html>
