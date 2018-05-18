@@ -3,10 +3,6 @@ div li{
  margin-left: 2em;
 }
 
-header h1{
- text-align: center;
-}
-
 .noborder{
  border: none;
 }
@@ -21,11 +17,16 @@ header h1{
  background: lightgrey;
 }*/
 
-header{
+#header{
  background: lightgrey;
  width: 100vw;
  height: 10vh;
 }
+
+#header h1{
+ text-align: center;
+}
+
 
 #main{
  width: 100vw;
@@ -33,7 +34,7 @@ header{
 
 #generalOutput{
  height: 90vh;
- overflow: scroll;
+
  margin: 0 auto;
  padding-top: 2%;
  width: 96%;

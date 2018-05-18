@@ -1,4 +1,8 @@
-var mediaMask=`<div class="col-lg-4 col-sm-12">       
+
+//note: mediaMask and mediaMaskActiveElement belong together as one manipulates the other
+var mediaMaskActiveElement=undefined;
+
+var mediaMask=`<div class="col-lg-4 col-sm-12" onclick="console.log($(this).attr('index'));" index="$$index$">       
                <h3>$$title$</h3>
                <img src="$$image$" alt="not found!"/>
                <p class="blue">$$genre$</p>
