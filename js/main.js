@@ -1,7 +1,5 @@
 $(document).ready(function(){
- $('#addMedia').click(function(){alert('add Media');});
- $('#eraseMedia').click(function(){alert('erase Media');});
-
+ 
  $('#showMedia').click(function(){
   console.log('show Media');
   var content=[];
@@ -18,9 +16,13 @@ $(document).ready(function(){
                               
                             content.push(output);
                             console.log(o.image);
-                           });
+                           }); 
   
   $('#generalOutput').html(content);  
  });
- 
+
+ $('#addMedia').click(function(){
+   $('#generalOutput').html(addMediaDialog);
+ });
+
 });
