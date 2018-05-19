@@ -51,6 +51,10 @@ div li{
  border: none;
 }
 
+.mediaMask:hover{
+ background-color: yellow;
+}
+
 .details p{
  display: none;
 }

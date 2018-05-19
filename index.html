@@ -36,23 +36,23 @@
                <li class="dropdown" id="showByCategory">
                  <button class="dropdown-toggle" id="TagDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Show By Category</button>
                  <div class="dropdown-menu" aria-labelledby="TagDrop">
-                 <p>Rock</p>
-                 <p>Pop</p>
-                 <p>SF</p>
-                 <p>Crimi</p>
-                 <p>Horror</p>
-                 <p>Comedy</p>
-                 <p>Drama</p>
-                 <p>Documentary</p>
-                 <p>Children</p>
-                 <p>Fantasy</p>   
+                 <p onclick="showByCategory('Rock');">Rock</p>
+                 <p onclick="showByCategory('Pop');">Pop</p>
+                 <p onclick="showByCategory('SF');">SF</p>
+                 <p onclick="showByCategory('Crimi');">Crimi</p>
+                 <p onclick="showByCategory('Horror');">Horror</p>
+                 <p onclick="showByCategory('Comedy');">Comedy</p>
+                 <p onclick="showByCategory('Drama');">Drama</p>
+                 <p onclick="showByCategory('Documentary');">Documentary</p>
+                 <p onclick="showByCategory('Children');">Children</p>
+                 <p onclick="showByCategory('Fantasy');">Fantasy</p>   
                  </div> 
                </li>
                <li id="localStorage">
                  <button class="dropdown-toggle" id="LocalStorage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Local Storage</button>
                  <div class="dropdown-menu" aria-labelledby="LocalStorage">
-                  <p>Load</p>
-                  <p>Save</p>
+                  <p id="loadLocalStorage">Load</p>
+                  <p id="saveLocalStorage">Save</p>
                  </div>   
                </li>         
     </ul>

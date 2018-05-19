@@ -2,7 +2,7 @@
 //note: mediaMask and mediaMaskActiveElement belong together as one manipulates the other
 var mediaMaskActiveElement=undefined;
 
-var mediaMask=`<div class="col-lg-4 col-sm-12" onclick="console.log($(this).attr('index'));" index="$$index$">       
+var mediaMask=`<div class="col-lg-4 col-sm-12 mediaMask" onclick="mediaMaskActiveElement='$$index$';console.log(mediaMaskActiveElement);">       
                <h3>$$title$</h3>
                <img src="$$image$" alt="not found!"/>
                <p class="blue">$$genre$</p>
@@ -66,7 +66,9 @@ var addMediaDialog=`<div id="MediaDialog">
                                                     </textarea>
                                               </span>
                      </p>
-                     <button onclick="console.log(JSON.stringify(addMediaData));mediaData.push(addMediaData);">submit</button>   
+                     <button onclick="mediaData.push(JSON.parse(JSON.stringify(addMediaData)));$('#generalOutput').html('<h2>new media has been added</h2>');">
+                                                                                                      submit
+                     </button>   
                     
                     </div>   
                    `;
