@@ -1,71 +1,66 @@
 <html>
+
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-            crossorigin="anonymous"></script>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!-- data json -->
-<script src="json/data.json"></script>
-<link rel="stylesheet" href="css/mycss.css"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- data json -->
+    <script src="json/data.json"></script>
+    <link rel="stylesheet" href="css/mycss.css" />
 </head>
+
 <body>
-<div class="container-fluid">
-<div id="header">
-<h1>MediaThek</h1>
-<nav class="navbar navbar-default noborder">
-    <div class="container-fluid ">
-    <ul class="nav navbar-nav">
-               <li class="dropdown" id="Media">
-                   <button class="dropdown-toggle" id="MediaDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Media</button>
-                     <div class="dropdown-menu" aria-labelledby="MediaDrop">
-                      <p id="addMedia">Add Media</p>
-                      <p id="eraseMedia">Erase Media</p>
-                      <p id="showMedia">Show Media</p>
-                   </div>
-               </li>
-               <li class="dropdown" id="showByCategory">
-                 <button class="dropdown-toggle" id="TagDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Show By Category</button>
-                 <div class="dropdown-menu" aria-labelledby="TagDrop">
-                 <p onclick="showByCategory('Rock');">Rock</p>
-                 <p onclick="showByCategory('Pop');">Pop</p>
-                 <p onclick="showByCategory('SF');">SF</p>
-                 <p onclick="showByCategory('Crimi');">Crimi</p>
-                 <p onclick="showByCategory('Horror');">Horror</p>
-                 <p onclick="showByCategory('Comedy');">Comedy</p>
-                 <p onclick="showByCategory('Drama');">Drama</p>
-                 <p onclick="showByCategory('Documentary');">Documentary</p>
-                 <p onclick="showByCategory('Children');">Children</p>
-                 <p onclick="showByCategory('Fantasy');">Fantasy</p>   
-                 </div> 
-               </li>
-               <li id="localStorage">
-                 <button class="dropdown-toggle" id="LocalStorage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Local Storage</button>
-                 <div class="dropdown-menu" aria-labelledby="LocalStorage">
-                  <p id="loadLocalStorage">Load</p>
-                  <p id="saveLocalStorage">Save</p>
-                 </div>   
-               </li>         
-    </ul>
+    <div class="container-fluid">
+        <div id="header">
+            <h1>MediaThek</h1>
+            <nav class="navbar navbar-default noborder">
+                <div class="container-fluid ">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown" id="Media">
+                            <button class="dropdown-toggle" id="MediaDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Media</button>
+                            <div class="dropdown-menu" aria-labelledby="MediaDrop">
+                                <p id="addMedia">Add Media</p>
+                                <p id="eraseMedia">Erase Media</p>
+                                <p id="showMedia">Show Media</p>
+                            </div>
+                        </li>
+                        <li class="dropdown" id="showByCategory">
+                            <button class="dropdown-toggle" id="TagDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Show By Category</button>
+                            <div class="dropdown-menu" aria-labelledby="TagDrop">
+                                <p onclick="showByCategory('Rock');">Rock</p>
+                                <p onclick="showByCategory('Pop');">Pop</p>
+                                <p onclick="showByCategory('SF');">SF</p>
+                                <p onclick="showByCategory('Crimi');">Crimi</p>
+                                <p onclick="showByCategory('Horror');">Horror</p>
+                                <p onclick="showByCategory('Comedy');">Comedy</p>
+                                <p onclick="showByCategory('Drama');">Drama</p>
+                                <p onclick="showByCategory('Documentary');">Documentary</p>
+                                <p onclick="showByCategory('Children');">Children</p>
+                                <p onclick="showByCategory('Fantasy');">Fantasy</p>
+                            </div>
+                        </li>
+                        <li id="localStorage">
+                            <button class="dropdown-toggle" id="LocalStorage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Local Storage</button>
+                            <div class="dropdown-menu" aria-labelledby="LocalStorage">
+                                <p id="loadLocalStorage">Load</p>
+                                <p id="saveLocalStorage">Save</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="main">
+            <div id="generalOutput" class="row"></div>
+        </div>
+        <script src="js/outputMask.js"></script>
+        <script src="js/main.js"></script>
     </div>
-</nav>
-</div>
+</body>
 
-
-<div id="main">
- <div id="generalOutput" class="row"></div>
-</div>	
-<script src="js/outputMask.js"></script>
-<script src="js/main.js"></script>
-</div>
-</body>	
 </html>
